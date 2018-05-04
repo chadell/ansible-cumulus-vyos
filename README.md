@@ -20,7 +20,9 @@ Note: Everything you create inside the **/vagrant** folder will be available out
 ## Exercise 1
 
 ```bash
-export ANSIBLE_HOST_KEY_CHECKING=False && ansible-playbook -i inventory.cfg exercise1.yml
+cd /vagrant 
+
+export ANSIBLE_HOST_KEY_CHECKING=False && ansible-playbook -i inventory.cfg exercise1.yml -v
 ``` 
 
 Notes:
